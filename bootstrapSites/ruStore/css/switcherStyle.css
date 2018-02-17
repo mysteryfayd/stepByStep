@@ -1,0 +1,60 @@
+.btn-primary {
+  background-color: #00ACE9;
+  border-color: #00ACE9;
+}
+
+.switcher {
+	text-align: center;
+}
+.switcher ul {
+	padding-left: 0;
+}
+.switcher ul li {
+	list-style-type: none;
+	display: inline-block;
+	margin: 0 20px;
+}
+.switcher ul li {
+	color: #ccc;
+  cursor:  pointer;
+}
+.switcher ul li:hover {
+	color: #00ACE9;
+}
+.switcher ul li i {
+	font-size: 32px;
+	-webkit-font-smoothing: antialiased;
+}
+
+.switcher ul li.grid-active,
+.switcher ul li.list-active {
+  color: #00ACE9;
+}
+
+.menuSwitch {
+	text-align: center;
+}
+.menuSwitch ul {
+	padding-left: 0;
+}
+.menuSwitch ul li {
+	list-style-type: none;
+	display: inline-block;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #00ACE9;
+  -webkit-transition:background-color 0.3s ease-in;  
+    -moz-transition:background-color 0.3s ease-in;  
+    -o-transition:background-color 0.3s ease-in;  
+    transition:background-color 0.3s ease-in;
+}
+.menuSwitch ul li:hover {
+	background-color: #00ACE9;
+	color: white;
+}
+
+.menuSwitch ul li.cat-active {
+  background-color: #00ACE9;
+  color: white;
+}

@@ -1,0 +1,143 @@
+        body{
+            overflow-x:hidden;
+            margin-top: 0:
+        }
+        
+        /* блоки адреса и добавочных номеров */
+        .map {
+            background: white;
+            height:70px;
+            width:450px;
+            position: relative;
+            right:-710px;
+            top:-70px;
+        }
+
+        .filter {
+            background: gray;
+            height:340px;
+            width:450px;
+            margin: 0 auto;
+            position:relative;
+            top:10px;
+        }        
+
+        .navbar-inverse {
+          background-color:#000 !important;
+          border:none;
+        }    
+
+        .containerMenu{
+            width: 1366px;
+            margin-right: auto;
+            margin-left: auto;
+            
+        }         
+        #menu1color{
+            background-color: black;
+            font-size: 18px;
+        }
+        #menu2color{
+            background-color: black;
+            font-size: 18px;
+        }
+
+        a.chief {
+            color: dodgerblue;
+        }
+        a {
+         color: dimgray; 
+        }
+        a:hover { 
+         text-decoration:none;
+        } 
+        a:visited {
+         color: dimgray; 
+        }
+        a:active {
+         color: dimgray;
+        }
+        p1{
+            line-height: 0.9em;
+            color: black;
+            font-size: 18px;
+            
+        }
+        p2{
+            line-height: 0.9em;
+            color: darkgray;
+            font-size: 14px;
+        }
+        p.Price{
+            line-height: 0.9em;
+            color: black;
+            font-size: 25px;
+        }
+        p.Sale{
+            line-height: 0.9em;
+            color: gray;
+            font-size: 25px;
+        }
+        p.Bonus{
+            font-weight: bold;
+            line-height: 0.5em;
+            color: limegreen;
+            font-size: 14px;
+        }
+        .no-gutter > [class*='col-'] {
+            margin-left: 0;
+            margin-right: 0;
+            padding-right:0;
+            padding-left:0;
+        }
+        
+        .block:hover{
+            box-shadow: 0 0 10px rgba(0,0,0, 0.2); 
+            border-radius:5px
+        }
+
+        #top-link-block.affix-top {
+            position: absolute; /* allows it to "slide" up into view */
+            bottom: -82px;
+            left: 10px;
+        }
+        #top-link-block.affix {
+            position: fixed; /* keeps it on the bottom once in view */
+            bottom: 18px;
+            left: 10px;
+        }
+        #top-link-block {
+            position:fixed;
+            bottom:50px;
+            right:100px;  
+        }
+             
+        .footer {
+           position: absolute;
+           bottom: 0;
+           height: 120px; 
+        }
+        
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        h3 {
+            color: black;
+            font-size: 16px;
+        }
+        h4 {
+            color: dimgray;
+            font-size: 21px;
+        }
+        
+        li.forFooter {
+            font-size: 14px;
+        } 
+
+        @media only screen and (max-device-width: 768px) { 
+        .hidden{ 
+        display: none; 
+        } 

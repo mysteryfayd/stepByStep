@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Apple техника, iPhone, iPad, Mac, Macbook" />
+    <meta name="author" content="">
+
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <title>ruStore – Интернет-магазин Apple в Крыму</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+    <!-- Переключатель новинки / популярное -->
+    <link href="css/switcherStyle.css" rel="stylesheet">
+      
+    <link href="css/buttonStyle.css" rel="stylesheet">
+    <link href="css/mainStyle.css" rel="stylesheet">
+
+    <!--  Стили слайдера   -->
+    <link href="css/sliderStyle.css" rel="stylesheet">
+    <link href="css/sliderBootstrapStyle.css" rel="stylesheet">
+   
+    <link href="css/menuStyle.css" rel="stylesheet">
+      
+  </head>
+    
+  <body style='overflow-x:hidden;'>
+      
+    <!---------------------------------------------- Меню ------------------------------------------------>
+      
+    <div id="menu1color" class="navbar navbar-inverse navbar-expand">
+      <div id="navigation" class="containerMenu">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="images/home/logo-black.png"></a>
+        </div>
+        <div id="menu1color" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav col-md-8">
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Магазины</a></li>
+            <li><a href="#">Сервисный центр</a></li>
+            <li><a href="#">Кредит</a></li>
+            <li><a href="#">Дисконт</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Вакансии</a></li>
+            <li><a href="#">Блог</a></li>
+          </ul>
+            <ul class="nav navbar-nav col-md-2">
+                <li><a href="#"><img src="images/home/user.png"> Вход</a></li>
+            </ul>
+            
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav col-md-6"></ul>
+                <ul class="nav navbar-nav col-md-4">
+                    <li>
+                        <a href="#" style="font-size: 22px; color:white" onclick="toggle('#menu-2');">
+                            <img src="images/home/phone.png"> +7 (978) 7-88888-7 <img src="images/home/icoDownArrow.png">
+                        </a>
+                    </li>
+                </ul>
+            </div><!--/.nav-collapse -->
+            
+        </div><!--/.nav-collapse -->
+          
+        <div id="menu2color" class="row">
+            <div class="collapse navbar-collapse">
+              <ul class="nav navbar-nav col-md-9">
+                <li><a href="#" onclick="toggle('#menu-1');"><img src="images/home/icoSearch.png" width="30px"></a></li>
+                <li><a href="#">Mac</a></li>
+                <li><a href="#">iPhone</a></li>
+                <li><a href="#">Watch</a></li>
+                <li><a href="#">iPad</a></li>
+                <li><a href="#">iPod</a></li>
+                <li><a href="#">Аудио</a></li>
+                <li><a href="#">Гаджеты</a></li>
+                <li><a href="#">Аксессуары</a></li>
+                <li><a href="#" style="color: red">SALE</a></li>
+                <li><a href="#">Акции</a></li>
+                <li><a href="#" style="color: red">TRADE-IN</a></li>
+              </ul>
+
+              <ul class="nav navbar-nav col-md-2">
+                <li><a href="#"><img src="images/home/icoTime.png" width="30px"></a></li>
+                <li><a href="#"><img src="images/home/icoBalance.png" width="30px"></a></li>
+                <li><a href="#"><img src="images/home/icoShop2.png" width="30px"></a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+          
+          <!--      Поиск      -->
+            <div id="menu-1" class="col-md-10">
+                <form class="nav navbar-form collapse" role="search" id="nav-header-search-collapse">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="товары, услуги, акции, новости" name="search">
+                    </div>
+                </form> 
+          </div> 
+        
+          <!--      Адрес и добавочный номер    -->
+          <div id="menu-2">
+            <div class="map">
+                <div class="row" align="center">
+                    <div class="container col-md-5">
+                        <ul>
+                            <div style="height:20px;"><br></div>
+                            <li style="color: dodgerblue;">Адрес</li>
+                        </ul>
+                    </div>
+                    <div class="container col-md-6">
+                        <ul>    
+                            <div style="height:20px;"><br></div>
+                            <li style="color: dodgerblue;">Добавочный номер</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="filter">
+                    <div class="row" style="margin: 5px;">
+                        <div class="container col-md-9">
+                            <ul>
+                                <div style="height:20px;"><br></div>
+                                <li><strong>Симферополь:</strong></li>
+                                <li>пр. Кирова, 68</li>
+                                <li>ул. Горького, 2а</li>
+                                <li>ТРК MEGANOM (центральный вход)</li>
+                                <br>
+                                <li><strong>Севастополь:</strong></li>
+                                <li>ТРЦ МУССОН (левое крыло)</li>
+                                <br>
+                                <li><strong>Ялта: </strong></li>
+                                <li>ул. Киевская 12</li>
+                                <li>ул. Пушкинская, 2</li>
+                            </ul>                          
+                        </div>
+                        <div class="container col-md-2">
+                            <ul>
+                                <div style="height:50px;"><br></div>
+                                <strong>
+                                    <li>113</li>
+                                    <li>112</li>
+                                    <li>118</li>
+                                    <br><br>
+                                    <li>115</li>
+                                    <br><br>
+                                    <li>117</li>
+                                    <li>114</li>
+                                </strong>
+                            </ul> 
+                        </div>
+                    </div> <!-- div class row close -->
+                </div>  <!-- div class filter close -->
+            </div>  <!-- div class map close -->          
+          </div> <!-- div id menu2 close -->
+        </div>
+      </div>  
+                        
+    <!---------------------------------------------- Конец меню ------------------------------------------------>
+      
+    <!---------------------------------------------- Слайдер ------------------------------------------------>
+      
+    <header>
+    <div id="layer3">
+    <div id="dws-slider" class="carousel slide" data-ride="carousel">
+        <!--Показатели-->
+        <ol class="carousel-indicators">
+            <li data-target="#dws-slider" data-slide-to="0" class="active"></li>
+            <li data-target="#dws-slider" data-slide-to="1"></li>
+            <li data-target="#dws-slider" data-slide-to="2"></li>
+        </ol>
+
+        <!--Обертка для слайдов-->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <a href="#">
+                    <img src="images/home/slider1.jpg" alt="">
+                    <div class="carousel-caption">
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <img src="images/home/slider2.jpg" alt="">
+                    <div class="carousel-caption">
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <img src="images/home/slider3.jpg" alt="">
+                    <div class="carousel-caption">
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!--Элементы управления-->
+        <a class="left carousel-control" href="#dws-slider" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only"></span>
+        </a>
+        <a class="right carousel-control" href="#dws-slider" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only"></span>
+        </a>
+    </div>
+        </div>
+    </header>
+
+    <div style="height:10px;"><br></div>
+      
+    <!-- Контент главной страницы -->
+    <div class="container-fluid" style="background: #ecebeb; padding: 0px; color: dimgray">
+            <div class="row" align="center">
+                <div class="col-md-3 col-sm-6 col-xs-6"><br><br>
+                    <a href="#">
+                    <h5>Ноутбуки MacBook</h5>
+                    <h5>от 60 000 ₽</h5> 
+                    <img class="img-top" src="images/home/products/MacBook.png" alt=""></a>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6"><br><br>
+                    <a href="#">
+                    <h5>Смартфоны iPhone</h5>
+                    <h5>от 20 000 ₽</h5> 
+                    <img class="img-top" src="images/home/products/iPhone.png" alt=""></a>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6"><br><br>
+                    <a href="#">
+                    <h5>Часы Appla Watch</h5>
+                    <h5>от 20 000 ₽</h5> 
+                    <img class="img-top" src="images/home/products/iWatches.png" alt=""></a>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6"><br><br>
+                    <a href="#">
+                    <h5>Планшеты iPad</h5>
+                    <h5>от 50 000 ₽</h5> 
+                    <img class="img-top" src="images/home/products/iPad.png" alt=""></a>
+                </div>
+                
+                <div class="col-md-3 col-sm-6 col-xs-6"><br><br>
+                    <a href="#">
+                    <h5>Apple iPod</h5>
+                    <h5>от 20 000 ₽</h5> 
+                    <img class="img-top" src="images/home/products/iPod.png" alt=""></a>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6"><br><br>
+                    <a href="#">
+                    <h5>Аудио</h5>
+                    <h5>от 10 000 ₽</h5> 
+                    <img class="img-top" src="images/home/products/EarPods.png" alt=""></a>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6"><br><br>
+                    <a href="#">
+                    <h5>Гаджеты</h5>
+                    <h5>от 10 000 ₽</h5> 
+                    <img class="img-top" src="images/home/products/accessories.png" alt=""></a>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6"><br><br>
+                    <a href="#">
+                    <h5>Аксессуары</h5>
+                    <h5>от 500 ₽</h5> 
+                    <img class="img-top" src="images/home/products/bumpers.png" alt=""></a>
+                </div>
+            </div><br><br>
+        </div>
+          
+    <div style="height:40px;"><br></div>
+
+    <!---------------------------------------------- Новинки / популярное ------------------------------------------------>  
+    
+    <div class="hidden"> <!--для скрытия блока на маленьких дисплеях-->
+        
+    <!-- Переключатель -->
+    <div id="templatemo_portfolio" class="section2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="glView">
+              <div class="switcher">
+                <ul>
+                  <li id="grid" class="grid"><i class="fa fa-th-large"></i></li>
+                  <li id="list" class="list"><i class="fa fa-align-justify"></i></li>
+                </ul>
+              </div>
+              <div class="menuSwitch">
+                <ul>
+                  <li class="cat-active" category="prod-cnt">Новинки</li>
+                  <li class="" category="webdesign">Популярное</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+        
+    </div>    <!--hidden end-->
+      
+    <div class="container" style="background: #fff; padding: 0px; color: dimgray">
+        
+    <!------------------------------------------- Товары в новинках и популярном ------------------------------------------>
+        
+    <div class="hidden"> <!--для скрытия блока на маленьких дисплеях--> 
+        
+        <div class="row" align="center">
+            
+                <div class="col-md-3 col-sm-12 dbox prod-cnt webdesign"><br><br>
+                    <div class="block">
+                        <a href="#">
+                            <img class="img-top" src="images/home/items/itemiPhoneX.png" alt="">
+                            <br><br>
+                            <div class="row" align="left" style="padding-left: 10px">
+                                <div class="col-md-12">
+                                    <p1>Apple iPhone X 256 ГБ <br>серебристый</p1><br>
+                                    <p2>Артикул: MKWK2RU/A</p2>
+                                    <br><br><br>
+                                
+                                    <div class="row no-gutter">
+                                        <div class="col-md-6">
+                                            <div class="col-xs-12 col-md-12">
+                                                <p class="Price">85 990 ₽</p>
+                                            </div>
+
+                                            <div class="col-xs-12 col-md-12">
+                                                <p class="Bonus">+1000 ₽ бонус</p>
+                                            </div>                                
+
+                                            <div style="height:10px;"><br></div>
+
+                                            <div class="col-xs-12 col-md-12">
+                                                <a class="btn blue no border" style="color:white; border-radius: 9px;" href="#"><img src="images/home/icoShop.png"> Купить</a>      
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="col-md-6">
+                                            <div class="col-md-12">
+                                                <p class="Sale"><s>99 500 ₽</s></p>
+                                            </div>
+                                        </div>
+                                    </div>                
+
+                                </div>
+                            </div>
+                            <div class="box"></div>
+                            <br>
+                        </a>
+                    </div>
+                </div>
+      
+                <div class="col-md-3 col-sm-12 dbox prod-cnt graphic"><br><br>
+                    <div class="block">
+                        <a href="#">
+                            <img class="img-top" src="images/home/items/itemiPhone8.png" alt="">
+                            <br><br>
+                            <div class="row" align="left" style="padding-left: 10px">
+                                <div class="col-md-12">
+                                    <p1>Apple iPhone 8 256 ГБ серый космос</p1><br>
+                                    <p2>Артикул: MKWK2RU/A</p2>
+                                    <br><br><br>
+                                
+                                    <div class="row no-gutter">
+                                        <div class="col-md-6">
+                                            <div class="col-xs-12 col-md-12">
+                                                <p class="Price">61 890 ₽</p>
+                                            </div>
+
+                                            <div class="col-xs-12 col-md-12">
+                                                <p class="Bonus">+1000 ₽ бонус</p>
+                                            </div>                                
+
+                                            <div style="height:10px;"><br></div>
+
+                                            <div class="col-xs-12 col-md-12">
+                                                <a class="btn blue no border" style="color:white; border-radius: 9px;" href="#"><img src="images/home/icoShop.png"> Купить</a>      
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="col-md-6">
+                                            <div class="col-md-12">
+                                                <p class="Sale"><s>99 500 ₽</s></p>
+                                            </div>
+                                        </div>
+                                    </div>                
+
+                                </div>
+                            </div>
+                            <div class="box"></div>
+                            <br>
+                        </a>
+                    </div>
+                </div>
+                                
+                <div class="col-md-3 col-sm-12 dbox prod-cnt graphic"><br><br>
+                    <div class="block">
+                        <a href="#">
+                            <img class="img-top" src="images/home/items/itemiWatchS3.png" alt="">
+                            <br><br>
+                            <div class="row" align="left" style="padding-left: 10px">
+                                <div class="col-md-12">
+                                    <p1>Apple Watch Series 3, 38 мм, золотистый корпус</p1><br>
+                                    <p2>Артикул: MKWK2RU/A</p2>
+                                    <br><br><br>
+                                
+                                    <div class="row no-gutter">
+                                        <div class="col-md-6">
+                                            <div class="col-xs-12 col-md-12">
+                                                <p class="Price">27 490 ₽</p>
+                                            </div>
+
+                                            <div class="col-xs-12 col-md-12">
+                                                <p class="Bonus">+1000 ₽ бонус</p>
+                                            </div>                                
+
+                                            <div style="height:10px;"><br></div>
+
+                                            <div class="col-xs-12 col-md-12">
+                                                <a class="btn blue no border" style="color:white; border-radius: 9px;" href="#"><img src="images/home/icoShop.png"> Купить</a>      
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="col-md-6">
+                                            <div class="col-md-12">
+                                                <p class="Sale"><s>99 500 ₽</s></p>
+                                            </div>
+                                        </div>
+                                    </div>                
+
+                                </div>
+                            </div>
+                            <div class="box"></div>
+                            <br>
+                        </a>
+                    </div>
+                </div>
+                               
+                <div class="col-md-3 col-sm-12 dbox prod-cnt webdesign"><br><br>
+                    <div class="block">
+                        <a href="#">
+                            <img class="img-top" src="images/home/items/itemMacBookAir.png" alt="">
+                            <br><br>
+                            <div class="row" align="left" style="padding-left: 10px">
+                                <div class="col-md-12">
+                                    <p1>MacBook Air 13-inch: 1.8GHz dual-core Intel Core i5, 128GB</p1><br>
+                                    <p2>Артикул: MKWK2RU/A</p2>
+                                    <br><br><br>
+                                
+                                    <div class="row no-gutter">
+                                        <div class="col-md-6">
+                                            <div class="col-xs-12 col-md-12">
+                                                <p class="Price">27 490 ₽</p>
+                                            </div>
+
+                                            <div class="col-xs-12 col-md-12">
+                                                <p class="Bonus">+1000 ₽ бонус</p>
+                                            </div>                                
+
+                                            <div style="height:10px;"><br></div>
+
+                                            <div class="col-xs-12 col-md-12">
+                                                <a class="btn blue no border" style="color:white; border-radius: 9px;" href="#"><img src="images/home/icoShop.png"> Купить</a>      
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="col-md-6">
+                                            <div class="col-md-12">
+                                                <p class="Sale"><s>99 500 ₽</s></p>
+                                            </div>
+                                        </div>
+                                    </div>                
+
+                                </div>
+                            </div>
+                            <div class="box"></div>
+                            <br>
+                        </a>
+                    </div>
+                </div>               
+
+            
+                <div class="col-md-3 col-sm-12 dbox prod-cnt webdesign"><br><br>
+                    <div class="block">
+                        <a href="#">
+                            <img class="img-top" src="images/home/items/itemiMac.png" alt="">
+                            <br><br>
+                            <div class="row" align="left" style="padding-left: 10px">
+                                <div class="col-md-12">
+                                    <p1>Apple iMac Pro 27" MQ2Y2RU/A Retina 5K, 8 Intel Xeon W 3.2 ГГц, 32 ГБ, 1 ТБ SSD, Radeon Pro Vega 56 8 ГБ</p1><br>
+                                    <p2>Артикул: MKWK2RU/A</p2>
+                                    <br>
+                                
+                                    <div class="row no-gutter">
+                                        <div class="col-md-6">
+                                            <div class="col-xs-12 col-md-12">
+                                                <p class="Price">379 990 ₽</p>
+                                            </div>
+
+                                            <div class="col-xs-12 col-md-12">
+                                                <p class="Bonus">+1000 ₽ бонус</p>
+                                            </div>                                
+
+                                            <div style="height:10px;"><br></div>
+
+                                            <div class="col-xs-12 col-md-12">
+                                                <a class="btn blue no border" style="color:white; border-radius: 9px;" href="#"><img src="images/home/icoShop.png"> Купить</a>      
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="col-md-6">
+                                            <div class="col-md-12">
+                                                <p class="Sale"><s>99 500 ₽</s></p>
+                                            </div>
+                                        </div>
+                                    </div>                
+
+                                </div>
+                            </div>
+                            <div class="box"></div>
+                            <br>
+                        </a>
+                    </div>
+                </div>
+      
+                <div class="col-md-3 col-sm-12 dbox prod-cnt graphic"><br><br>
+                    <div class="block">
+                        <a href="#">
+                            <img class="img-top" src="images/home/items/itemBeats.png" alt="">
+                            <br><br>
+                            <div class="row" align="left" style="padding-left: 10px">
+                                <div class="col-md-12">
+                                    <p1>Beats Pro Infinite наушники проводные - черные</p1><br>
+                                    <p2>Артикул: MKWK2RU/A</p2>
+                                    <br><br><br>
+                                
+                                    <div class="row no-gutter">
+                                        <div class="col-md-6">
+                                            <div class="col-xs-12 col-md-12">
+                                                <p class="Price">24 990 ₽</p>
+                                            </div>
+
+                                            <div class="col-xs-12 col-md-12">
+                                                <p class="Bonus">+1000 ₽ бонус</p>
+                                            </div>                                
+
+                                            <div style="height:10px;"><br></div>
+
+                                            <div class="col-xs-12 col-md-12">
+                                                <a class="btn blue no border" style="color:white; border-radius: 9px;" href="#"><img src="images/home/icoShop.png"> Купить</a>      
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="col-md-6">
+                                            <div class="col-md-12">
+                                                <p class="Sale"><s>99 500 ₽</s></p>
+                                            </div>
+                                        </div>
+                                    </div>                
+
+                                </div>
+                            </div>
+                            <div class="box"></div>
+                            <br>
+                        </a>
+                    </div>
+                </div>
+                                
+                <div class="col-md-3 col-sm-12 dbox prod-cnt webdesign"><br><br>
+                    <div class="block">
+                        <a href="#">
+                            <img class="img-top" src="images/home/items/itemiPadPro.png" alt="">
+                            <br><br>
+                            <div class="row" align="left" style="padding-left: 10px">
+                                <div class="col-md-12">
+                                    <p1>iPad Pro 10.5-inch Wi-Fi 64GB - Space Grey</p1><br>
+                                    <p2>Артикул: MKWK2RU/A</p2>
+                                    <br><br><br>
+                                
+                                    <div class="row no-gutter">
+                                        <div class="col-md-6">
+                                            <div class="col-xs-12 col-md-12">
+                                                <p class="Price">45 490 ₽</p>
+                                            </div>
+
+                                            <div class="col-xs-12 col-md-12">
+                                                <p class="Bonus">+1000 ₽ бонус</p>
+                                            </div>                                
+
+                                            <div style="height:10px;"><br></div>
+
+                                            <div class="col-xs-12 col-md-12">
+                                                <a class="btn blue no border" style="color:white; border-radius: 9px;" href="#"><img src="images/home/icoShop.png"> Купить</a>      
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="col-md-6">
+                                            <div class="col-md-12">
+                                                <p class="Sale"><s>99 500 ₽</s></p>
+                                            </div>
+                                        </div>
+                                    </div>                
+
+                                </div>
+                            </div>
+                            <div class="box"></div>
+                            <br>
+                        </a>
+                    </div>
+                </div>
+                               
+                <div class="col-md-3 col-sm-12 dbox prod-cnt graphic"><br><br>
+                    <div class="block">
+                        <a href="#">
+                            <img class="img-top" src="images/home/items/itemiPhone8Gray.png" alt="">
+                            <br><br>
+                            <div class="row" align="left" style="padding-left: 10px">
+                                <div class="col-md-12">
+                                    <p1>Apple iPhone 8 256 ГБ серый космос</p1><br>
+                                    <p2>Артикул: MKWK2RU/A</p2>
+                                    <br><br><br>
+                                
+                                    <div class="row no-gutter">
+                                        <div class="col-md-6">
+                                            <div class="col-xs-12 col-md-12">
+                                                <p class="Price">61 890 ₽</p>
+                                            </div>
+
+                                            <div class="col-xs-12 col-md-12">
+                                                <p class="Bonus">+1000 ₽ бонус</p>
+                                            </div>                                
+
+                                            <div style="height:10px;"><br></div>
+
+                                            <div class="col-xs-12 col-md-12">
+                                                <a class="btn blue no border" style="color:white; border-radius: 9px;" href="#"><img src="images/home/icoShop.png"> Купить</a>      
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="col-md-6">
+                                            <div class="col-md-12">
+                                                <p class="Sale"><s>99 500 ₽</s></p>
+                                            </div>
+                                        </div>
+                                    </div>                
+
+                                </div>
+                            </div>
+                            <div class="box"></div>
+                            <br>
+                        </a>
+                    </div>
+                </div>               
+
+        </div>
+        
+    </div>    <!--hidden end-->
+        
+    <div style="height:40px;"><br></div>
+        
+    <hr>
+        
+    <div style="height:40px;"><br></div>    
+
+    <h1 align="center" style="font-size: 25px">Акции и новости</h1>       
+
+    <div style="height:40px;"><br></div>    
+
+    <!-------------------------------------------------- Акции и новости -------------------------------------------------->
+        <div class="row col-md-12">
+            <div class="col-md-6">
+                <a href="#"><img src="images/home/news/itemByLaptop.jpg" width="100%" style="box-shadow: 0 0 10px rgba(0,0,0, 0.2)"></a>
+            </div>
+            <div class="col-md-6">
+                <a href="#"><img src="images/home/news/itemRecoveryYourGadget.jpg" width="100%" style="box-shadow: 0 0 10px rgba(0,0,0, 0.2)"></a>
+            </div>
+        </div>
+
+        <div style="height:40px;"><br></div>    
+        
+        <div align="center">
+            <a class="btn blue no border" style="color:white; border-radius: 9px; width: 150px" href="#" >Больше</a> 
+        </div>   
+            
+        <div style="height:70px;"><br></div>
+        
+    </div> 
+
+    <!--------------------------------------------------------- footer -------------------------------------------------------->
+    <footer>
+        <div class="container-fluid" style="background: #f7f7f7; padding: 0px; color: dimgray">
+            <br><br><br>
+                <div class="container">
+                    <div class="row col-md-12">
+                        <div class="col-md-3 col-xs-12">
+                            <div class="link-area">
+                                <div style="height:20px;"><br></div>  
+                                <a href="#" alt="WatsUp"><img src="images/home/footer/icoWatsUp.png"></a>    
+                                <a href="#" alt="Telegram"><img src="images/home/footer/icoTelegram.png"></a>    
+                                <a href="#" alt="Viber"><img src="images/home/footer/icoViber.png"></a> 
+                                <div style="height:15px;"><br></div>  
+                                <h4>+7 (978) 7-88888-7</h4>
+                                <hr><div style="height:10px;"><br></div>  
+                                <section class="index-social">
+                                    <div class="container">
+                                        <div class="row text-center">
+                                              <a href="#" alt="Facebook"><img src="images/home/footer/icoFacebook.png"></a>    
+                                              <a href="#" alt="Vkontakte"><img src="images/home/footer/icoVK.png"></a>    
+                                              <a href="#" alt="Odnoklassniki"><img src="images/home/footer/icoOK.png"></a>    
+                                              <a href="#" alt="YouTube"><img src="images/home/footer/icoYouTube.png"></a>    
+                                              <a href="#" alt="Instagram"><img src="images/home/footer/icoInstagram.png"></a>    
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <a href="#" style="color: dodgerblue; font-size: 15px; border-bottom: 1px solid dodgerblue;">
+                                        <strong>Написать директору</strong>
+                                    </a><br>
+                                    <p style="color: black; font-size: 14px"> ©2015-2018 Компания ruStore</p>
+                                </section>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-xs-12"> 
+                            <div class="link-area">
+                                <h3><br>Каталог</h3>
+                                <ul>
+                                    <li class="forFooter"><a href="#">Mac</a></li>
+                                    <li class="forFooter"><a href="#">iPad</a></li>
+                                    <li class="forFooter"><a href="#">iPhone</a></li>
+                                    <li class="forFooter"><a href="#">Watch</a></li>
+                                    <li class="forFooter"><a href="#">iPod</a></li>
+                                    <li class="forFooter"><a href="#">Аксессуары</a></li>
+                                    <br>    
+                                    <li class="forFooter"><a href="#">О нас</a></li>
+                                    <li class="forFooter"><a href="#">Наши магазины</a></li>
+                                    <li class="forFooter"><a href="#">Сервисный центр</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-6">
+                            <div class="link-area">
+                                <h3><br>О Компании</h3>
+                                <ul>
+                                    <li class="forFooter"><a href="#">Рассрочка и кредит</a></li>
+                                    <li class="forFooter"><a href="#">Адреса магазинов</a></li>
+                                    <li class="forFooter"><a href="#">Преимущества</a></li>
+                                    <li class="forFooter"><a href="#">Акции и новости</a></li>
+                                    <li class="forFooter"><a href="#">Услуги</a></li>
+                                    <li class="forFooter"><a href="#">Обучение</a></li>
+                                    <li class="forFooter"><a href="#">Блог</a></li>
+                                    <li class="forFooter"><a href="#">Корпоративным клиентам</a></li>
+                                    <li class="forFooter"><a href="#">Вакансии</a></li>
+                                    <li class="forFooter"><a href="#">Контакты</a></li>
+                                    <li class="forFooter"><a href="#">Обратная связь</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-6">
+                            <div class="link-area">
+                                <h3><br>Помощь</h3>
+                                <ul>
+                                <li class="forFooter"><a href="#">Подарочные карты</a></li>
+                                <li class="forFooter"><a href="#">Обмен и возврат</a></li>
+                                <li class="forFooter"><a href="#">Гарантии</a></li>
+                                <li class="forFooter"><a href="#">Оставка и оплата</a></li>
+                                <li class="forFooter"><a href="#">Бонусная программа</a></li>
+                                <li class="forFooter"><a href="#">Сервисаня программа</a></li>
+                                <li class="forFooter"><a href="#">Бонусная программа</a></li>
+                                <li class="forFooter"><a href="#">Оферта</a></li>
+                                <li class="forFooter"><a href="#">Политика конфиденциальности</a></li>
+                                <li class="forFooter"><a href="#">Мобильная версия сайта</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <br><br>
+        </div>
+    </footer>     
+      
+    <!--      Кнопка goToTop      -->
+    <div align="right">
+        <span id="top-link-block" class="hidden">
+            <a href="#top" class="well well-sm"onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+                <img src="images/home/goToTop.png">
+            </a>
+        </span>
+    </div>
+        
+    <!-- Bootstrap JavaScript -->      
+      
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+      
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>  
+      
+    <script src="bootstrap/jquery/jquery.min.js"></script>
+    <script src="bootstrap/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+      
+       <script type="text/javascript">
+        
+        $('.carousel').carousel({
+        interval: 6000
+        });   
+               
+      $(function(){
+          var default_view = 'grid';
+          if($.cookie('view') !== 'undefined'){
+              $.cookie('view', default_view, { expires: 7, path: '/' });
+          } 
+          function get_grid(){
+              $('.list').removeClass('list-active');
+              $('.grid').addClass('grid-active');
+              $('.prod-cnt').animate({opacity:0},function(){
+                  $('.prod-cnt').removeClass('dbox-list');
+                  $('.prod-cnt').addClass('dbox');
+                  $('.prod-cnt').stop().animate({opacity:1});
+              });
+          }
+          function get_list(){
+              $('.grid').removeClass('grid-active');
+              $('.list').addClass('list-active');
+              $('.prod-cnt').animate({opacity:0},function(){
+                  $('.prod-cnt').removeClass('dbox');
+                  $('.prod-cnt').addClass('dbox-list');
+                  $('.prod-cnt').stop().animate({opacity:1});
+              });
+          }
+          if($.cookie('view') == 'list'){ 
+              $('.grid').removeClass('grid-active');
+              $('.list').addClass('list-active');
+              $('.prod-cnt').animate({opacity:0});
+              $('.prod-cnt').removeClass('dbox');
+              $('.prod-cnt').addClass('dbox-list');
+              $('.prod-cnt').stop().animate({opacity:1}); 
+          } 
+
+          if($.cookie('view') == 'grid'){ 
+              $('.list').removeClass('list-active');
+              $('.grid').addClass('grid-active');
+              $('.prod-cnt').animate({opacity:0});
+                  $('.prod-cnt').removeClass('dboxlist');
+                  $('.prod-cnt').addClass('dbox');
+                  $('.prod-cnt').stop().animate({opacity:1});
+          }
+
+          $('#list').click(function(){   
+              $.cookie('view', 'list'); 
+              get_list()
+          });
+
+          $('#grid').click(function(){ 
+              $.cookie('view', 'grid'); 
+              get_grid();
+          });
+
+          /* filter */
+          $('.menuSwitch ul li').click(function(){
+              var CategoryID = $(this).attr('category');
+              $('.menuSwitch ul li').removeClass('cat-active');
+              $(this).addClass('cat-active');
+              
+              $('.prod-cnt').each(function(){
+                  if(($(this).hasClass(CategoryID)) == false){
+                     $(this).css({'display':'none'});
+                  };
+              });
+              $('.'+CategoryID).fadeIn(); 
+              
+          });
+      });
+           
+        
+           //раскрывающиеся div (menu1 - поиск, menu2 - список городов)
+           $(function() {
+             $("div[id*='menu-']").hide(); 
+            })();
+
+            function toggle(objName) {
+             var obj = $(objName),
+             blocks = $("div[id*='menu-']");
+
+             if (obj.css("display") != "none") {
+             obj.animate({ height: 'hide' }, 250);
+             } else {
+             var visibleBlocks = $("div[id*='menu-']:visible");
+
+             if (visibleBlocks.length < 1) {
+             obj.animate({ height: 'show' }, 250);
+             } else {
+             $(visibleBlocks).animate({ height: 'hide' }, 250, function() {
+             obj.animate({ height: 'show' }, 250);
+             }); 
+             }
+             }
+            };
+           
+        // кнопка наверх
+        if ( ($(window).height() + 100) < $(document).height() ) {
+            $('#top-link-block').removeClass('hidden').affix({
+                // how far to scroll down before link "slides" into view
+                offset: {top:100}
+            });
+        };
+        
+
+    </script>  
+      
+      
+  </body>
+
+</html>
